@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream🤩Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f99346d953.js" 
+    crossorigin="anonymous"></script>  
+  </head>
+<style>
+:root {
+    --primary-font-family: 'Ubuntu', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
+    --primary-background-color:whitesmoke;
+    --primary-color: #272044;
+    --secondary-color:whitesmoke;
+}  
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--primary-font-family);
+}
+/*Header*/
+header {
+    font-family: var(--secondary-font-family);
+    background-color: rgb(231, 227, 227);
+}
+
+.navbar {
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #272044;
+    font-weight: 500;
+}
+
+/*Main*/
+main {
+  background-color: var(--primary-background-color);
+  color: var(--primary-color)
+}
+
+.hero-container {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/835/original/IMG_0455.JPG?1684062808");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+.hero-title-2 { 
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: none;
+}
+
+.hero-button {
+  background-color: var(--primary-background-color);  
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 16px 32px;
+  margin-top: 60px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none; 
+}
+
+.hero-button:hover {
+  background-color: var(--primary-color);  
+  color: var(--secondary-color);
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  letter-spacing: 5px;  
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.button {
+  background-color: var(--primary-color); 
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 16px 32px;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none; 
+}
+
+.button:hover {
+  background-color: var(--secondary-color); 
+  color: var(--primary-color);
+}  
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin: 10px 0 10px 0;
+}
+
+main h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+span {
+  font-weight: 300;
+}
+
+main h5 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+main p {
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 10px 0 10px 0;
+}
+
+section.secondary {
+  background:  rgb(231, 227, 227);
+}
+
+/*Footer*/
+footer {
+  color: var(--secondary-color);
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.5),
+      rgba(39, 32, 68, 0.5)),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/917/original/iScreen_Shoter_-_20230514190016285.png?1684080177");
+  background-size: cover;
+}
+
+.github-link {
+    color: var(--secondary-color);
+    font-size: 20px;    
+}
+
+.github-link:hover {
+    font-size: 26px;  
+}  
+    
+footer h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 24px;
+}
+
+@media (max-width: 960px) {
+.img-nav {
+  width: 75px;
+  height: 45px;
+}  
+
+.hero-title {
+  font-size: 50px;
+}
+
+.hero-title-2 { 
+  font-size: 30px;
+}
+
+main h2 {
+  font-size: 26px;
+}
+
+main h3 {
+  font-size: 16px;
+}
+
+.button {
+  font-size: 14px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+img {
+  width: 322px;
+  height: 215px;
+}
+
+main h4 {
+  font-size: 16px;
+}
+
+main h5 {
+  font-size: 14px;
+}
+
+main p {
+  font-size: 12px;
+}
+
+section {
+  padding: 10px;
+}
+
+.img-culture {
+  width: 355px;
+  height: 250px;
+}
+
+.github-link {
+    font-size: 16px;    
+}
+
+.github-link:hover {
+    font-size: 20px;  
+}  
+    
+footer h2 {
+  font-size: 16px;
+}
+
+footer p {
+  font-size: 12px;
+}
+}
+
+</style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar"> 
+        <div class="container-fluid">
+          <a class="navbar-brand-active" href="#ukraineismyhome" title="Homepage">
+            <img class="img-nav"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/856/original/IMG_0461.jpg?1684067332"
+            width="85"
+            height="55"
+            alt="ukraine is my home">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNav" class="collapse navbar-collapse justify-content-start">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-link-black" href="#nature" title="Nature">NATURE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-black" href="#culture" title="Culture">CULTURE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-black" href="#heritage&architecture" title="Heritage&Architecture">HERITAGE & ARCHITECTURE</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+     </nav>
+    </header>
+    <main>
+      <div class="hero-container">
+        <h1 class="hero-title">UKRAINE is my home</h1>
+        <h2  class="hero-title-2">...but now UKRAINE is my dream travel destination...</h2>
+        <a class="hero-button" href="#more">I explain</a>
+      </div>
+      <section class="grid grid-2-columns">
+        <div>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/897/original/kharkiv-wheat-on-fire.jpeg?1684074049"
+            alt="russia-ukrainian war"
+            class="img-responsive"
+          />
+        </div>
+        <div>
+          <a name="more"></a>
+            <h2>Russia invaded Ukraine</h2>
+            <h3>15th months of Ukraine's heroic resistance against full-scale Russian aggression and 
+              the 9-year-long Russian occupation of Crimea and parts of Donbas
+            </h3>
+            <a class="button" href="https://war.ukraine.ua/russia-invaded-ukraine-why-does-this-matter-to-the-world/" 
+              target="_blank">Why does this matter to the world?
+            </a>
+          <p class="text">
+            Ukraine has endured, is alive, is fighting, and will win. 
+            Ukrainian victory will be the victory of freedom, democracy, and international partnership over tyranny and terror. 
+            And a powerful message to all people and countries: evil cannot thrive in this world, it will not escape its end or punishment. 
+            <br/> 
+            <strong>After the Victory, I will go on a long dream trip through my native Ukraine to see all the unique and unsurpassed natural places,
+              architectural and cultural heritage monuments.</strong> 
+          </p>
+        </div>
+      </section>
+      <section class="secondary" id="nature">
+        <h2 class="text-center">NATURE</h2>
+        <h3 class="text-center">The unique and unsurpassed natural places</h3>
+          <div class="grid grid-3-columns">
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/049/original/IMG_0464.jpg?1684133505"
+                  width="337"
+                  height="215"
+                  alt="SVITIAZ LAKE"
+                />
+              </div>
+              <div class="card-body">
+                <h4>SVITIAZ LAKE <span>| Volyn region</span></h4>
+                <p>
+                  Lake Svitiaz is a natural tourist attraction of Volyn. It is part of the Shatsky Lakes, a group of more than 30 lakes between the Pripyat and Zahidny Bug rivers.
+                  <br/>
+                  Svitiaz is the largest lake in the group of Shatsky lakes, the deepest lake of natural origin in Ukraine. It is fed by underground waters and artesian springs. 
+                  The water here is extremely clear and soft. In sunny weather, the bottom is visible at a depth of several meters.
+                  <br/>
+                  The area of Svitiaz is 2,622 hectares, length – 9,225 m, width – 4,000 m, maximum depth – 58.4 m, average depth – 6.9 m.
+                </p>
+                <h5>Photo: Yevhenii Chasovenko</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%BE%D0%B7%D0%B5%D1%80%D0%BE+%D0%A1%D0%B2%D1%96%D1%82%D1%8F%D0%B7%D1%8C,+%D0%92%D0%BE%D0%BB%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@51.4999232,23.8406371,13z/data=!4m6!3m5!1s0x4723e4fb2d2b796d:0x1f48bc8ddb982b4!8m2!3d51.4966472!4d23.8461249!16s%2Fm%2F05zwd1l"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/050/original/IMG_0468.jpg?1684133615"
+                  width="337"
+                  height="215"
+                  alt="LAKE SYNEVYR"
+                />
+              </div>
+              <div class="card-body">
+                <h4>LAKE SYNEVYR <span>| Carpathians</span></h4>
+                <p>
+                  Lake Synevyr is the largest and deepest high-altitude lake in Ukraine. Located at an altitude of 989 m above sea level.
+                  The lake was formed after an earthquake 10-11 thousand years ago.
+                  <br/> 
+                  The water in the lake is weakly mineralized, clean, and transparent. 
+                  There are three types of trout here - lake, rainbow, and brook trout.
+                  <br/>
+                  It is forbidden to swim in Synevyr, in particular, the temperature of the water, which is heated to a maximum of only 13°С, will not allow swimming.
+                  <br/>
+                  The area of the lake is 4-5 hectares, and the greatest depth is 22 m. 
+                </p>
+                <h5>Photo: depositphotos.com</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%A1%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%80/@48.6170133,23.6752451,15z/data=!3m1!4b1!4m5!3m4!1s0x4739e3e3f179593f:0xbc869f803c94acef!8m2!3d48.617!4d23.684?shorturl=1"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/051/original/sivash-1-min-e1527096539329-2.jpg?1684133742"
+                  width="337"
+                  height="215"
+                  alt="SYVASH PINK LAKE"
+                />
+              </div>
+              <div class="card-body">
+                <h4>PINK LAKE SIVASH <span>| Kherson region</span></h4>
+                <p>
+                  Pink Lake Sivash is a huge strait of the Sea of Azov with shallow water bodies and peninsulas.
+                  The medicinal properties and salinity of the waters of Sivash are often compared to the Dead Sea in Israel. 
+                  The water in Sivash is very saturated with salt and keeps the body on the surface, and the average depth is 1 m. 
+                  But there is a feature that makes the Ukrainian pearl win over the Israeli one - it is the fabulous and unique color of the water. 
+                  Dunaliella Salina lives in the lake - a single-celled alga that gives the water a pink color.
+                </p>
+                <h5>Photo: myukraine.org.ua</h5>
+                <a
+                  href="https://www.google.com/maps/place/Сиваш/@46.0833469,34.3230333,15z/data=!3m1!4b1!4m6!3m5!1s0x40c2055ec0905fa5:0xf10aca78757ec9e9!8m2!3d46.083333!4d34.333333!16zL20vMGNiOTV3"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-3-columns">
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/052/original/IMG_0467.JPG?1684133968"
+                  width="337"
+                  height="215"
+                  alt="DZHARYLHACH ISLAND"
+                />
+              </div>
+              <div class="card-body">
+                <h4>DZHARYLHACH ISLAND <span>| Kherson region</span></h4>
+                <p>
+                  Dzharylhach is the largest uninhabited island in Ukraine and Europe with an area of 56 km². 
+                  A lot of legends and interesting stories are associated with it. 
+                  Many tourists call this beautiful place, hidden in the Black Sea (Kherson region), the “Ukrainian Maldives” because of the snow-white sand, 
+                  wildlife, and crystal clear water. 
+                  <br/>
+                  Here, you can find amazingly beautiful seashells, see dolphins swimming along the shore, and cook delicacies such 
+                  as sea snails, mussels, and fish over a campfire.
+                </p>
+                <h5>Photo: Anna Paliukh</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%94%D0%B6%D0%B0%D1%80%D0%B8%D0%BB%D0%B3%D0%B0%D1%87/@46.0372052,32.6747265,11z/data=!3m1!4b1!4m5!3m4!1s0x40c115aaa4b6c09d:0x44391ac93e365224!8m2!3d46.03372!4d32.8974944?shorturl=1"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/057/original/Nataliya-Shestakova-Oleshky_Pisky_01_YDS_0485-1.jpg?1684138604"
+                  width="337"
+                  height="215"
+                  alt="OLESHKY SANDS"                  
+                />
+              </div>
+              <div class="card-body">
+                <h4>OLESHKY SANDS <span>| Kherson region</span></h4>
+                <p>
+                  Oleshky sands - the largest sandy area, which only can be found on the territory of Ukraine.
+                  It has a natural origin and is formed by huge mounds of sand, the greatest height is 5 meters. 
+                  Unusual Kherson attraction occupies about 160 000 hectares. In 2010, part of the officially taken under Mr. US National Natural Park. 
+                  After 1.5 years, the unusual nature reserve called "Oleshky Sands" started its work.  
+                  Various types of animals and insects are secured by the national park.
+                  The tourist profile of the park remains one of the most important for Oleshky sands. 
+                </p>
+                <h5>Photo: Nataliya Shestakova</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%9E%D0%BB%D0%B5%D1%88%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D1%96+%D0%BF%D1%96%D1%81%D0%BA%D0%B8/@46.5953219,33.0577326,12z/data=!3m1!4b1!4m6!3m5!1s0x40c3f0119f086979:0x406b9af27e977912!8m2!3d46.5820556!4d33.0418557!16s%2Fm%2F05s_swr"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/083/original/IMG_0472.jpg?1684156048"
+                  width="337"
+                  height="215"
+                  alt="BAKOTA"
+                />
+              </div>
+              <div class="card-body">
+                <h4>BAKOTA <span>| Khmelnytskyi region</span></h4>
+                <p>
+                  Bakota is the territory and surroundings of the Bakota Bay on the Dniester, located in the south of the Khmelnytskyi region. 
+                  Until 1981, there was a village here, which gave the name to the territory.
+                  Bakota occupies an area of 1,590 hectares, and thanks to its rocky shores, it has a warm and mild microclimate.
+                  Tourists are attracted to the place by fantastic views, several beaches and, of course, the remains of a rock monastery. 
+                  There are three springs with healing water nearby - Northern, Southern, and Southernmost.
+                <h5>Photo: Serhii Zysko</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%91%D0%B0%D0%BA%D0%BE%D1%82%D0%B0.+%D0%97%D0%BE%D0%BD%D0%B0+%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/@48.0742782,27.5635761,7z/data=!4m6!3m5!1s0x4733a890cdb47d99:0x72eb34982fc1c005!8m2!3d48.6189313!4d26.9868733!15sCgzQkdCw0LrQvtGC0LBaDiIM0LHQsNC60L7RgtCwkgEMY2l2aWNfY2VudGVymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJWYjJacFNrTkJFQUU?shorturl=1"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="culture">
+          <h2 class="text-center">CULTURE</h2>
+          <h3 class="text-center">The significant cultural legacy</h3>
+          <br/>
+          <div class="grid grid-2-columns">
+            <div>
+              <img class="img-culture"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/116/original/Fr6L_-UWcAAdHyi.jpeg?1684172961"
+                width="600"
+                height="400"
+                alt="UKRAINIAN LANGUAGE"
+              />
+            </div>
+            <div>
+              <h4>UKRAINIAN LANGUAGE</h4>
+              <br/>
+                <p class="text">
+                  Ukrainian is the official state language in Ukraine.
+                  <br/>
+                  In the Ukrainian language, 33 letters and 38 sounds are almost an ideal ratio for the alphabet.
+                  <br/>
+                  The Ukrainian language is one of the sweetest languages in the world. In 1934, at a linguistic congress in Paris, leading experts recognized the Ukrainian language
+                  as the third among all languages (after French and Farsi) in terms of melody, lexical and phraseological richness, enormous word-forming possibilities, and syntactic 
+                  flexibility. At a similar forum of linguists in Switzerland, where the main evaluation criteria were the euphonic system of the language, its melodiousness, 
+                  and melodiousness, the Ukrainian language was named second after Italian.
+                  <br/>
+                  The Ukrainian language is often called a nightingale.
+                </p>
+            </div>
+          </div>
+          <br/>
+          <div class="grid grid-2-columns">
+            <div>
+              <h4>VYSHYVANKA</h4>
+              <br/>
+                <p class="text">
+                  Vyshyvanka is an embroidered shirt that is part of the Ukrainian national costume.
+                  For a Ukrainian, vyshyvanka is not just clothing. This is something very special: personal, family, holy. 
+                  Vyshyvanka is a symbol that preserves one's roots, identity, and self-understanding. 
+                  This is our history: mythology, religion, the ancient art of our ancestors, the soul of our people. 
+                  Our genetic code is encrypted in the vyshyvanka.
+                  <br/>
+                  Vyshyvanka is the pride of the Ukrainian people, the traditions of which are passed down from generation to generation. 
+                  This national symbol has a thousand-year history and unique patterns in different regions.
+                  Vyshyvanka have long been worn by men, women, and children. 
+                  The oldest materials from which Ukrainians made their own vyshyvanka were fabrics made of sheep's wool, linen, and hemp.
+                  <br/>
+                  On May 18, Ukrainians will celebrate Vyshyvanka Day 2023, dedicated to our national clothing.
+                </p>
+            </div>
+            <div>
+              <img class="img-culture"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/124/original/70514.jpeg?1684175601"
+                width="600"
+                height="400"
+                alt="VYSHYVANKA"
+              />
+            </div>
+          </div>
+          <br/>
+          <div class="grid grid-2-columns">
+            <div>
+              <img class="img-culture"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/144/original/630_360_1542129414-291.jpeg?1684178125"
+                width="600"
+                height="400"
+                alt="BORSCH"
+              />
+            </div>
+            <div>
+              <h4>BORSCH</h4>
+              <br/>
+                <p class="text">
+                  Borsch is the main first course and a symbol of Ukrainian cuisine, cooked from a variety of vegetables, including beets. 
+                  Borsch has more than 250 recipes! It is prepared in all regions of Ukraine.
+                  Borsch is part of the Ukrainian cultural code. Ukrainians consider it a subject of national identity.
+                  <br/>
+                  On July 1, 2022, the Intergovernmental Committee for the Protection of Intangible Cultural Heritage added the culture of making Ukrainian borsch
+                  to the UNESCO List of Intangible Cultural Heritage in need of immediate protection. 
+                  The initiator of the official recognition of borsch as a Ukrainian national dish was chef Yevhen Klopotenko. 
+                </p>
+            </div>
+          </div>                
+        </section>
+        <section class="secondary" id="heritage&architecture">
+        <h2 class="text-center">HERITAGE & ARCHITECTURE</h2>
+        <h3 class="text-center">A mix of traditional Old World Europe and modern urban life</h3>
+          <div class="grid grid-3-columns">
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/150/original/IMG_0473.JPG?1684180095"
+                  width="337"
+                  height="215"
+                  alt="SWALLOW'S NEST"
+                />
+              </div>
+              <div class="card-body">
+                <h4>SWALLOW'S NEST <span>| Yalta, Crimea</span></h4>
+                <p>
+                  The Swallow's Nest is a decorative castle located at Gaspra, a small spa town between Yalta and Alupka on the Crimean peninsula. 
+                  It was built between 1911 and 1912, on top of the 40-meter-high Aurora Cliff, in a Neo-Gothic design for the Baltic German businessman Baron von Steingel.
+                  The Swallow's Nest is one of the most popular visitor attractions in Crimea, having become the symbol of Crimea's southern coastline.
+                </p>
+                <h5>Photo: depositphotos.com</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%9B%D0%B0%D1%81%D1%82%D1%96%D0%B2%D1%87%D0%B8%D0%BD%D0%B5+%D0%B3%D0%BD%D1%96%D0%B7%D0%B4%D0%BE/@44.4304342,34.126263,17z/data=!3m1!4b1!4m6!3m5!1s0x4094c78678024639:0xab730c5afd6ab04e!8m2!3d44.4304742!4d34.1283835!16zL20vMGgwMjJf"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/164/original/IMG_0480.JPG?1684187594"
+                  width="337"
+                  height="215"
+                  alt="NATIONAL ACADEMIC AND BALLET THEATRE"
+                />
+              </div>
+              <div class="card-body">
+                <h4>NATIONAL ACADEMIC AND BALLET THEATRE <span>| Odesa</span></h4>
+                <p>
+                  The Odesa National Academic Opera and Ballet Theatre is the oldest theater in Odesa. The Theatre and the Potemkin Stairs are the most famous edifices in Odesa.
+                  The modern building was constructed by Fellner & Helmer in a neo-baroque style and opened in 1887. 
+                  The architecture of the luxurious audience hall follows the late French rococo style.
+                </p>
+                <h5>Photo: depositphotos.com</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9+%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9+%D1%82%D0%B5%D0%B0%D1%82%D1%80+%D0%BE%D0%BF%D0%B5%D1%80%D0%B8+%D1%82%D0%B0+%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83/@46.4854787,30.7389907,17z/data=!3m1!4b1!4m6!3m5!1s0x40c631985b45cb0b:0x6e315e968e5b2a42!8m2!3d46.4854787!4d30.7411794!16zL20vMGZ5NDdn"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/161/original/st-andrews-church-kyiv-2018-v0-zjmotu41xsl81.jpeg?1684183755"
+                  width="337"
+                  height="215"
+                  alt="ST.ANDREW'S CHURCH"
+                />
+              </div>
+              <div class="card-body">
+                <h4>ST.ANDREW'S CHURCH <span>| Kyiv</span></h4>
+                <p>
+                  St Andrew's Church is an Orthodox church in Kyiv, constructed between 1747 and 1754 to a design by the Italian architect Bartolomeo Rastrelli.
+                  Situated on a steep hill, where Andrew the Apostle is believed to have foretold the great future 
+                  of the place as the cradle of Christianity. Since 1968, the building has been a museum,
+                  part of the National Sanctuary "Sophia of Kyiv" as a landmark of cultural heritage.
+                </p>
+                <h5>Photo: reddit.com</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0/@50.4590318,-8.5055068,4z/data=!4m10!1m2!2m1!1sST.ANDREW'S+CHURCH!3m6!1s0x40d4ce43925b6597:0xa40ae8f859121eaa!8m2!3d50.4590318!4d30.5179307!15sChJTVC5BTkRSRVcnUyBDSFVSQ0haFCISc3QgYW5kcmV3J3MgY2h1cmNokgEXZWFzdGVybl9vcnRob2RveF9jaHVyY2iaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTmhhMHB0TldwblJSQULgAQA!16zL20vMDV4aHQ0"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-3-columns">
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/162/original/IMG_0478.JPG?1684184259"
+                  width="337"
+                  height="215"
+                  alt="KAMIANETS-PODILSKYI CASTLE"
+                />
+              </div>
+              <div class="card-body">
+                <h4>KAMIANETS-PODILSKYI CASTLE <span>| Kamianets-Podilskyi</span></h4>
+                <p>
+                  Kamianets-Podilskyi Castle located in the historic region of Podolia in the western part of the country. 
+                  Historical accounts date Kamianets-Podilskyi Castle to the early 14th century. 
+                  Initially built to protect the bridge connecting the city with the mainland, the castle sits on top of a peninsula carved out by the winding Smotrych River, 
+                  forming a natural defense system for Kamianets-Podilskyi's historic Old Town neighborhood
+                </p>
+                <h5>Photo: Anna Paliukh</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%9A%D0%B0%D0%BC'%D1%8F%D0%BD%D0%B5%D1%86%D1%8C-%D0%9F%D0%BE%D0%B4%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B0+%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F/@48.6734758,26.5603994,17z/data=!3m1!4b1!4m6!3m5!1s0x4733c783746f0513:0x32c6465cade8091c!8m2!3d48.6734758!4d26.5625881!16s%2Fm%2F059__hp"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/163/original/1035068_800x600_aerophoto_lviv_9.jpeg?1684186782"
+                  width="337"
+                  height="215"
+                  alt="RYNOK SQUARE"                  
+                />
+              </div>
+              <div class="card-body">
+                <h4>RYNOK SQUARE <span>| Lviv</span></h4>
+                <p>
+                  Rynok Square is the central square in Lviv, the historical heart of the modern city, typical of the medieval architecture of European cities. 
+                  The center of the historical district of Sredmistia.
+                  The square was created during the reign of Lev Danylovych in the second half of the 13th century as a result of the regular planning of buildings on the model 
+                  of medieval Western European cities, as the center of trade and social life of the new city, which was confirmed by archaeological excavations in 2017. 
+                </p>
+                <h5>Photo: ua.igotoworld.com</h5>
+                <a
+                  href="https://www.google.com/maps/place/%D0%BF%D0%BB%D0%BE%D1%89%D0%B0+%D0%A0%D0%B8%D0%BD%D0%BE%D0%BA,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8413275,24.0267214,17z/data=!3m1!4b1!4m10!1m2!2m1!1z0L_Qu9C-0YnQsCDRgNC40L3QvtC6!3m6!1s0x473add6daee0eb21:0x98a6b79bb05742c2!8m2!3d49.8413276!4d24.0315923!15sChXQv9C70L7RidCwINGA0LjQvdC-0LqSAQVyb3V0ZeABAA!16s%2Fm%2F04y7yfk?hl=uk"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header grid grid-column">
+                <img 
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/165/original/IMG_0479.JPG?1684187837"
+                  width="337"
+                  height="215"
+                  alt="CHERNIVTSI NATIONAL UNIVERSITY"
+                />
+              </div>
+              <div class="card-body">
+                <h4>CHERNIVTSI NATIONAL UNIVERSITY <span>| Chernivtsi</span></h4>
+                <p>
+                  Chernivtsi National University is a public university in the City of Chernivtsi in Western Ukraine. 
+                  One of the leading Ukrainian institutions for higher education, it was founded in 1875 as the Franz-Josephs-Universität Czernowitz when Chernivtsi was the capital 
+                  of the Duchy of Bukovina. Today the university is based at the Residence of Bukovinian and Dalmatian Metropolitans 
+                  building complex, a UNESCO World Heritage Site since 2011.
+                <h5>Photo: depositphotos.com </h5>
+                <a
+                  href="https://www.google.com/maps?q=CHERNIVTSI+NATIONAL+UNIVERSITY&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj_jJ6Gn_j-AhXQ6CoKHZgjDqIQ_AUoAnoECAEQBA"
+                  class="button"
+                  target="_blank"
+                >
+                  Locate on GoogleMaps→
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>        
+      </main>
+      <footer>
+        <section class="grid grid-2-columns-with-first-narrow">
+          <div>
+            <div class="row">
+              <div class="col text-center about-me">
+                <h2><strong>About me</strong></h2>
+                <p>
+                  My name is Marianna Dei.
+                  <br>
+                  I designed &amp; built this landing page for SheCodes Challenge 
+                  <br/>
+                  about my dream travel through my native Ukraine.
+                </p>
+              </div>  
+              <div class="col text-center about-landing-page">
+                <h2><strong>About this project</strong></h2>
+                <p>
+                  I created this project to develop my coding skills.
+                  <br/>
+                  I used HTML and CSS.
+                  <br/> 
+                  This project is open-sourced on 
+                  <a
+                    href=""
+                    title="github-link"
+                    target="_blank"
+                    ><i class="fa-brands fa-github github-link">.</i>
+                  </a>
+                </p>
+              </div> 
+            </div>  
+          </div>  
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
