@@ -203,12 +203,25 @@ main h3 {
   color: var(--primary-color);
 }  
 
-.text {
+.text-culture {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
   margin: 10px 0 10px 0;
 }
+
+@keyframes textCulture {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 2;
+        }
+    }
+
+    .text-culture:hover {
+        animation: textCulture 5s;
+    }
 
 main h4 {
   font-weight: 400;
@@ -316,7 +329,7 @@ main h3 {
   grid-gap: 10px;
 }
 
-.text {
+.text-culture {
   font-size: 14px;
 }
 
@@ -342,7 +355,7 @@ section {
 }
 
 .img-culture {
-  width: 355px;
+  width: 350px;
   height: 250px;
 }
 
@@ -629,7 +642,7 @@ footer p {
             <div>
               <h4>UKRAINIAN LANGUAGE</h4>
               <br/>
-                <p class="text">
+                <p class="text-culture">
                   Ukrainian is the official state language in Ukraine.
                   <br/>
                   In the Ukrainian language, 33 letters and 38 sounds are almost an ideal ratio for the alphabet.
@@ -648,7 +661,7 @@ footer p {
             <div>
               <h4>VYSHYVANKA</h4>
               <br/>
-                <p class="text">
+                <p class="text-culture">
                   Vyshyvanka is an embroidered shirt that is part of the Ukrainian national costume.
                   For a Ukrainian, vyshyvanka is not just clothing. This is something very special: personal, family, holy. 
                   Vyshyvanka is a symbol that preserves one's roots, identity, and self-understanding. 
@@ -685,7 +698,7 @@ footer p {
             <div>
               <h4>BORSCH</h4>
               <br/>
-                <p class="text">
+                <p class="text-culture">
                   Borsch is the main first course and a symbol of Ukrainian cuisine, cooked from a variety of vegetables, including beets. 
                   Borsch has more than 250 recipes! It is prepared in all regions of Ukraine.
                   Borsch is part of the Ukrainian cultural code. Ukrainians consider it a subject of national identity.
