@@ -83,6 +83,18 @@ main {
   margin: 0;
   text-transform: none;
 }
+@keyframes heroTitle-2 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 2;
+        }
+    }
+
+    .hero-title-2 {
+        animation: heroTitle-2 4s;
+    }
 
 .hero-button {
   background-color: var(--primary-background-color);  
@@ -152,6 +164,19 @@ main h2 {
   text-transform: uppercase;
 }
 
+@keyframes textCenter {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 2;
+        }
+    }
+
+    .text-center {
+        animation: textCenter 4s;
+    }
+
 main h3 {
   font-weight: 700;
   font-size: 18px;
@@ -210,6 +235,22 @@ main p {
 
 section.secondary {
   background:  rgb(231, 227, 227);
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.img-culture {
+  transition: transform 0.3s;
+}
+
+.img-culture:hover {
+  transform: scale(1.1);
 }
 
 /*Footer*/
@@ -347,6 +388,9 @@ footer p {
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-black" href="#heritage&architecture" title="Heritage&Architecture">HERITAGE & ARCHITECTURE</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link nav-link-black" href="https://shecodes-react-weatherapp.netlify.app/" title="Weather">WEATHER</a>
               </li>              
             </ul>
           </div>
@@ -370,8 +414,8 @@ footer p {
         <div>
           <a name="more"></a>
             <h2>Russia invaded Ukraine</h2>
-            <h3>18th months of Ukraine's heroic resistance against full-scale Russian aggression and 
-              the 9-year-long Russian occupation of Crimea and parts of Donbas
+            <h3>30th months of Ukraine's heroic resistance against full-scale Russian aggression and 
+              the 10-year-long Russian occupation of Crimea and parts of Donbas
             </h3>
             <a class="button" href="https://war.ukraine.ua/russia-invaded-ukraine-why-does-this-matter-to-the-world/" 
               target="_blank">Why does this matter to the world?
@@ -575,7 +619,7 @@ footer p {
           <br/>
           <div class="grid grid-2-columns">
             <div>
-              <img class="img-culture"
+              <img class="img-culture col d-none d-lg-block"
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/116/original/Fr6L_-UWcAAdHyi.jpeg?1684172961"
                 width="600"
                 height="400"
@@ -620,7 +664,7 @@ footer p {
                 </p>
             </div>
             <div>
-              <img class="img-culture"
+              <img class="img-culture col d-none d-lg-block"
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/124/original/70514.jpeg?1684175601"
                 width="600"
                 height="400"
@@ -631,7 +675,7 @@ footer p {
           <br/>
           <div class="grid grid-2-columns">
             <div>
-              <img class="img-culture"
+              <img class="img-culture col d-none d-lg-block"
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/144/original/630_360_1542129414-291.jpeg?1684178125"
                 width="600"
                 height="400"
@@ -840,7 +884,7 @@ footer p {
                 <p>
                   I created this project to develop my coding skills.
                   <br/>
-                  I used HTML and CSS.
+                  I used HTML, CSS and JavaScript.
                   <br/> 
                   This project is open-sourced on 
                   <a
@@ -857,4 +901,9 @@ footer p {
       </footer>
     </div>
   </body>
+  <script>
+    let firstName = prompt("What is your name?");
+    let emoji = prompt("What is your favourite emoji?");
+    alert(firstName + ", I invite you to my dream trip through my native Ukraine " + emoji);
+  </script>
 </html>
